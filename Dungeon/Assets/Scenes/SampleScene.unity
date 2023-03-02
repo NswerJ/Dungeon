@@ -576,31 +576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoveSpeed: 1000
---- !u!1 &1231867659 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7699365905314152414, guid: 7200bf9154af637428f86f7d032e4903, type: 3}
-  m_PrefabInstance: {fileID: 1900175621}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1231867665
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231867659}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f1ab59f6444629e4482fc455f17f93cf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1900175621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -608,10 +583,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7699365905314152410, guid: 7200bf9154af637428f86f7d032e4903, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1028898665, guid: 641f89f78b06585449c0b2bc3fd8efb5, type: 3}
     - target: {fileID: 7699365905314152411, guid: 7200bf9154af637428f86f7d032e4903, type: 3}
       propertyPath: m_RootOrder
       value: 3
