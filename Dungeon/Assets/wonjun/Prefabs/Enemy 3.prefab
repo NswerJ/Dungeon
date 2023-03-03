@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66db711474f373f458b60c0cd59a2cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  follow3: 0
   target: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
   velocity: 0.05

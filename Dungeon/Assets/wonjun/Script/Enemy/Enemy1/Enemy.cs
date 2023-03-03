@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool follow;
     SpriteRenderer sp;
     public GameObject target;
     public Vector3 direction;
@@ -13,12 +14,16 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        follow = true;
         sp = GetComponent<SpriteRenderer>();    
     }
     // Update is called once per frame
     void Update()
     {
-        MoveToTarget();
+        if (follow)
+        {
+            MoveToTarget();
+        }
     }
 
     public void MoveToTarget()
