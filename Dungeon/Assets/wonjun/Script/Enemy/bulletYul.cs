@@ -16,6 +16,7 @@ public class bulletYul : bullet
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+        Destroy(gameObject, 5f);
     }
     private void FixedUpdate()
     {
