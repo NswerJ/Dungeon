@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
-  velocity: 0
+  velocity: 0.008
   accelaration: 0
 --- !u!50 &7699365905314152412
 Rigidbody2D:

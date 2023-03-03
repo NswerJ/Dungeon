@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
-  velocity: 0
+  velocity: 0.008
   accelaration: 0
   bullet: {fileID: 4558179732186248616, guid: 3465fc34bc5607e4c9472cf27f342a41, type: 3}
   spawnTime: 3

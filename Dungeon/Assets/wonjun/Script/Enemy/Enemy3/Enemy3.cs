@@ -9,6 +9,7 @@ public class Enemy3 : MonoBehaviour
     public Vector3 direction;
     public float velocity;
     public float accelaration;
+    public GameObject boom;
 
 
     private void Start()
@@ -53,6 +54,14 @@ public class Enemy3 : MonoBehaviour
         else if (direction.x > 0)
         {
             sp.flipX = true;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Instantiate(boom, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

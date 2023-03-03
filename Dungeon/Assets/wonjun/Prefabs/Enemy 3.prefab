@@ -123,8 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}
-  velocity: 0
+  velocity: 0.05
   accelaration: 0
+  boom: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
 --- !u!61 &1193896375175335816
 BoxCollider2D:
   m_ObjectHideFlags: 0
