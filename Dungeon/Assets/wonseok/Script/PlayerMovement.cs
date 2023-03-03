@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D playerRb;
+    public Rigidbody2D playerRb;
     private Animator myAnim;
     public float playerMoveSpeed;
     private void Awake()

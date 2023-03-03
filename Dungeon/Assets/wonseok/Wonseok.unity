@@ -370,6 +370,8 @@ MonoBehaviour:
   - {fileID: 2003219437}
   - {fileID: 1111890098}
   vcam: {fileID: 1461694841}
+  maxDelayTime: 1
+  delayTime: 0
 --- !u!4 &905685352
 Transform:
   m_ObjectHideFlags: 0
