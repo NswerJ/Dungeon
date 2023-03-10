@@ -25,8 +25,8 @@ public class ChangeView : MonoBehaviour
         players[0].enabled = true;
 
 
-        players[1].playerRb.bodyType = RigidbodyType2D.Static;
-        players[0].playerRb.bodyType = RigidbodyType2D.Dynamic;
+        players[1].rb.bodyType = RigidbodyType2D.Static;
+        players[0].rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     private void ChangePlayer02()
@@ -35,8 +35,8 @@ public class ChangeView : MonoBehaviour
         players[0].enabled = false;
         players[1].enabled = true;
 
-        players[0].playerRb.bodyType = RigidbodyType2D.Static;
-        players[1].playerRb.bodyType = RigidbodyType2D.Dynamic;
+        players[0].rb.bodyType = RigidbodyType2D.Static;
+        players[1].rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     private void Update()
