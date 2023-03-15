@@ -8,18 +8,38 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D playerRb;
     private Animator myAnim;
     public float playerMoveSpeed;
+    public Vector3 direction;
+    SpriteRenderer sp;
     private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
+        sp = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate()
     {
-        playerRb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * playerMoveSpeed * Time.deltaTime;
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
 
-        /*myAnim.SetFloat("MoveX", playerRb.velocity.x);
-        myAnim.SetFloat("MoveY", playerRb.velocity.y);*/
-        //애니메이션
+        direction = new Vector2(x, y);
+        /*playerRb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 
+            Input.GetAxisRaw("Vertical")) * playerMoveSpeed * Time.deltaTime;*/
+
+        
+        if (direction.x < 0)
+        {
+            sp.flipX = false;
+            myAnim.SetBool("Run", true);
+        }
+        else if (direction.x > 0)
+        {
+            sp.flipX = true;
+            myAnim.SetBool("Run", true);
+        }
+        else if(direction.x == 0)
+        {
+            myAnim.SetBool("Run", false);
+        }
     }
 }
